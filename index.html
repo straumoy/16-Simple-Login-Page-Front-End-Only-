@@ -6,7 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <style>
-        h1 {text-align: center}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center; <!--figured out this style element myself-->
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"]  {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 
@@ -17,7 +55,7 @@
         <input type="text" id="username" name="username" required><br><br>
         <label for="password">Password</label><br>
         <input type="text" id="password" name="password" required><br><br>
-        <input type="submit" value="Login"><br>
+        <input type="button" value="Login"><br>
         <input type="checkbox" id="remember" name="remember">
         <label for="remember">Remember me</label>
     </form>
